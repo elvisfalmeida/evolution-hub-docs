@@ -3,13 +3,13 @@ title: Chatwoot
 icon: comment  
 ---
 
-The Evolution API allows direct integration with **Chatwoot**, a customer support platform that centralizes communications from multiple channels. This documentation details how to configure this integration both when creating a new instance and in an existing instance.
+The Ebyte Cloud API allows direct integration with **Chatwoot**, a customer support platform that centralizes communications from multiple channels. This documentation details how to configure this integration both when creating a new instance and in an existing instance.
 
 ## Chatwoot Integration Configuration
 
 ### 1. Configuration During Instance Creation
 
-You can configure Chatwoot directly when creating a new instance in the Evolution API. Use the following request body for the `/instance/create` endpoint:
+You can configure Chatwoot directly when creating a new instance in the Ebyte Cloud API. Use the following request body for the `/instance/create` endpoint:
 
 #### Endpoint
 
@@ -37,7 +37,7 @@ POST {{baseUrl}}/instance/create
     "chatwootImportMessages": true,
     "chatwootDaysLimitImportMessages": 3,
     "chatwootOrganization": "Evolution Bot",
-    "chatwootLogo": "https://evolution-api.com/files/evolution-api-favicon.png"
+    "chatwootLogo": "https://ux.net.br/managerfiles/evolution-api-favicon.png"
 }
 ~~~
 
@@ -111,7 +111,7 @@ Here is an example of how the request body should look to configure the integrat
 
 ## Final Considerations
 
-The integration of Evolution API with Chatwoot allows you to centralize and automate WhatsApp communication directly in your customer support platform. With options for customization, importing contacts and messages, and the ability to reopen existing conversations, this integration offers flexibility to meet the specific needs of your workflow.
+The integration of Ebyte Cloud API with Chatwoot allows you to centralize and automate WhatsApp communication directly in your customer support platform. With options for customization, importing contacts and messages, and the ability to reopen existing conversations, this integration offers flexibility to meet the specific needs of your workflow.
 
 <Info>  
 For more details on other integrations and configurations, check the [environment variables section](/v2/pt/env).

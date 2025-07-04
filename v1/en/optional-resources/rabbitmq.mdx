@@ -4,7 +4,7 @@ icon: rabbit
 ---
 # Activating RabbitMQ
 
-To effectively utilize RabbitMQ with the Evolution API for managing WhatsApp instances, it's essential to activate RabbitMQ on each individual WhatsApp instance. This activation allows each instance to start receiving and processing AMQP (Advanced Message Queuing Protocol) queue requests that are specific to that particular WhatsApp instance.
+To effectively utilize RabbitMQ with the Ebyte Cloud API for managing WhatsApp instances, it's essential to activate RabbitMQ on each individual WhatsApp instance. This activation allows each instance to start receiving and processing AMQP (Advanced Message Queuing Protocol) queue requests that are specific to that particular WhatsApp instance.
 
 In other words, for each WhatsApp instance where you want to use RabbitMQ, you need to ensure that RabbitMQ integration is enabled. This setup will allow the instance to communicate with the RabbitMQ server and handle its queue of messages and requests. Enabling RabbitMQ on each instance is crucial for proper distribution and management of messaging tasks across different WhatsApp instances in your system.
 
@@ -12,7 +12,7 @@ In other words, for each WhatsApp instance where you want to use RabbitMQ, you n
 
 For **developers** who wants to use in their applications AMQP messaging system, you could use RabbitMQ for queue your instances actions.
 
-To configure RabbitMQ for individual WhatsApp instances in the Evolution API, you can use the following endpoint:
+To configure RabbitMQ for individual WhatsApp instances in the Ebyte Cloud API, you can use the following endpoint:
 
 ~~~ POST
 [baseUrl]/rabbitmq/set/[instance_name]

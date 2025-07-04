@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.3",
   "info": {
-    "title": "Evolution API",
+    "title": "Ebyte Cloud API",
     "version": "1.7.1"
   },
   "servers": [
@@ -6416,7 +6416,7 @@
                   },
                   "example": {
                     "status": 200,
-                    "message": "Welcome to the Evolution API, it is working!",
+                    "message": "Welcome to the Ebyte Cloud API, it is working!",
                     "version": "1.7.4",
                     "swagger": "http://example.evolution-api.com/docs",
                     "manager": "http://example.evolution-api.com/manager",

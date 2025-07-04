@@ -3,23 +3,23 @@ title: Banco de Dados
 icon: database
 ---
 
-O banco de dados é uma parte fundamental da Evolution API v2, responsável por armazenar todas as informações críticas da aplicação. A API suporta tanto PostgreSQL quanto MySQL, utilizando o Prisma como ORM (Object-Relational Mapping) para facilitar a interação com esses bancos de dados.
+O banco de dados é uma parte fundamental da Ebyte Cloud API v2, responsável por armazenar todas as informações críticas da aplicação. A API suporta tanto PostgreSQL quanto MySQL, utilizando o Prisma como ORM (Object-Relational Mapping) para facilitar a interação com esses bancos de dados.
 
 ## Escolha do Banco de Dados
 
-A Evolution API v2 permite a flexibilidade de escolher entre PostgreSQL e MySQL como provedor de banco de dados. A escolha pode ser configurada através da variável de ambiente `DATABASE_PROVIDER` e as conexões são gerenciadas pelo Prisma.
+A Ebyte Cloud API v2 permite a flexibilidade de escolher entre PostgreSQL e MySQL como provedor de banco de dados. A escolha pode ser configurada através da variável de ambiente `DATABASE_PROVIDER` e as conexões são gerenciadas pelo Prisma.
 
 ## Instalação e Configuração
 
 ### Utilizando Docker
 
-A maneira mais fácil e rápida de configurar um banco de dados para a Evolution API v2 é através do Docker. Abaixo estão as instruções para configurar tanto o PostgreSQL quanto o MySQL usando Docker Compose.
+A maneira mais fácil e rápida de configurar um banco de dados para a Ebyte Cloud API v2 é através do Docker. Abaixo estão as instruções para configurar tanto o PostgreSQL quanto o MySQL usando Docker Compose.
 
 #### PostgreSQL
 
 Para configurar o PostgreSQL via Docker, siga os passos abaixo:
 
-1. Baixe o arquivo `docker-compose.yaml` para o PostgreSQL disponível [aqui](https://github.com/EvolutionAPI/evolution-api/blob/main/Docker/postgres/docker-compose.yaml).
+1. Baixe o arquivo `docker-compose.yaml` para o PostgreSQL disponível [aqui](https://github.com/elvisfalmeida/ebyte-cloud-api/blob/main/Docker/postgres/docker-compose.yaml).
 2. Navegue até o diretório onde o arquivo foi baixado e execute o comando:
 
 ```bash
@@ -32,7 +32,7 @@ docker-compose up -d
 
 Para configurar o MySQL via Docker, siga os passos abaixo:
 
-1. Baixe o arquivo `docker-compose.yaml` para o MySQL disponível [aqui](https://github.com/EvolutionAPI/evolution-api/blob/v2.0.0/Docker/mysql/docker-compose.yaml).
+1. Baixe o arquivo `docker-compose.yaml` para o MySQL disponível [aqui](https://github.com/elvisfalmeida/ebyte-cloud-api/blob/v2.0.0/Docker/mysql/docker-compose.yaml).
 2. Navegue até o diretório onde o arquivo foi baixado e execute o comando:
 
 ```bash
@@ -87,7 +87,7 @@ sudo apt-get install postgresql postgresql-contrib
 sudo service postgresql start
 ```
 
-3. Crie um banco de dados para a Evolution API v2:
+3. Crie um banco de dados para a Ebyte Cloud API v2:
 
 ```bash
 sudo -u postgres createdb evolution
@@ -108,7 +108,7 @@ sudo apt-get install mysql-server
 sudo service mysql start
 ```
 
-3. Crie um banco de dados para a Evolution API v2:
+3. Crie um banco de dados para a Ebyte Cloud API v2:
 
 ```bash
 mysql -u root -p -e "CREATE DATABASE evolution;"

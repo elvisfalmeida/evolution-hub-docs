@@ -4,7 +4,7 @@ icon: docker
 ---
 
 <Note>  
-  **Prerequisites:** Before proceeding with the installation of Evolution API v2 using Docker, make sure you have already configured the necessary services, such as PostgreSQL and Redis. Follow the links below for more details:
+  **Prerequisites:** Before proceeding with the installation of Ebyte Cloud API v2 using Docker, make sure you have already configured the necessary services, such as PostgreSQL and Redis. Follow the links below for more details:
   
   - [Database Configuration](/v2/pt/requirements/database)
   - [Redis Configuration](/v2/pt/requirements/redis)
@@ -15,12 +15,12 @@ icon: docker
   [Official Docker Documentation](https://docs.docker.com/engine/install/).
 </Note>
 
-Evolution API v2 is Docker-ready and can be easily deployed with Docker in standalone or swarm mode. 
-The official Evolution API repository contains all the necessary composition files to install and run the API.
+Ebyte Cloud API v2 is Docker-ready and can be easily deployed with Docker in standalone or swarm mode. 
+The official Ebyte Cloud API repository contains all the necessary composition files to install and run the API.
 
 ## Docker Compose
 
-Deploying Evolution API v2 using Docker Compose simplifies the setup and management of your Docker containers. 
+Deploying Ebyte Cloud API v2 using Docker Compose simplifies the setup and management of your Docker containers. 
 It allows you to define your Docker environment in a `docker-compose.yaml` file and then use a single command to start everything.
 
 ### Docker Compose File
@@ -35,7 +35,7 @@ For syncing two servers in parallel or for greater scalability, use Docker Swarm
   If you are using an older version, replace with `docker-compose`.
 </Warning>
 
-Docker standalone is suitable when Evolution API will run on just one machine, without the need for immediate scalability. 
+Docker standalone is suitable when Ebyte Cloud API will run on just one machine, without the need for immediate scalability. 
 This is the most convenient method for most users.
 
 To get started, create a `docker-compose.yml` file with the following content:
@@ -66,7 +66,7 @@ AUTHENTICATION_API_KEY=change-me
 
 <Note>  
   For more configurations, you can get the example file from the
-  [official repository](https://github.com/EvolutionAPI/evolution-api/blob/main/.env.example). Also, check the environment variables guide [here](/v2/pt/env).
+  [official repository](https://github.com/elvisfalmeida/ebyte-cloud-api/blob/main/.env.example). Also, check the environment variables guide [here](/v2/pt/env).
 </Note>
 
 ### Starting the API
@@ -77,7 +77,7 @@ Navigate to the directory containing the `docker-compose.yml` file and run the f
 docker compose up -d
 ~~~
 
-This command will download the necessary Docker images, create the defined services, networks, and volumes, and start the Evolution API service.
+This command will download the necessary Docker images, create the defined services, networks, and volumes, and start the Ebyte Cloud API service.
 
 ### Checking the Logs
 
@@ -97,11 +97,11 @@ docker compose down
 
 ### Accessing the API
 
-Open your browser and go to [http://localhost:8080](http://localhost:8080) to check if the Evolution API is operational.
+Open your browser and go to [http://localhost:8080](http://localhost:8080) to check if the Ebyte Cloud API is operational.
 
 ## Docker Swarm
 
-To set up and manage a Docker Swarm cluster for Evolution API v2, follow the instructions below. Docker Swarm is ideal for environments that require scalability and high availability.
+To set up and manage a Docker Swarm cluster for Ebyte Cloud API v2, follow the instructions below. Docker Swarm is ideal for environments that require scalability and high availability.
 
 ### Docker Swarm Installation
 
@@ -226,7 +226,7 @@ Run the previously obtained command to add the Worker to the cluster:
 docker swarm join --token HASH IP_SERVER:2377
 ~~~
 
-### Prerequisites for Evolution API via Swarm
+### Prerequisites for Ebyte Cloud API via Swarm
 
 #### Installing Traefik
 
@@ -313,9 +313,9 @@ networks:
 docker stack deploy --prune --resolve-image always -c traefik.yaml traefik
 ~~~
 
-### Deploying Evolution API v2
+### Deploying Ebyte Cloud API v2
 
-Finally, to deploy Evolution API v2 on Docker Swarm, use the configuration file available [here](https://github.com/EvolutionAPI/evolution-api/blob/v2.0.0/Docker/swarm/evolution_api_v2.yaml) with the following content:
+Finally, to deploy Ebyte Cloud API v2 on Docker Swarm, use the configuration file available [here](https://github.com/elvisfalmeida/ebyte-cloud-api/blob/v2.0.0/Docker/swarm/evolution_api_v2.yaml) with the following content:
 
 ~~~ yaml
 version: "3.7"
@@ -392,4 +392,4 @@ docker stack deploy --prune --resolve-image always -c evolution_api_v2.yaml evol
 
 ### Accessing the API
 
-Open your browser and go to [https://evo2.site.com](https://evo2.site.com) to check if the Evolution API is operational.
+Open your browser and go to [https://evo2.site.com](https://evo2.site.com) to check if the Ebyte Cloud API is operational.

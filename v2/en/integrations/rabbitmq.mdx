@@ -3,7 +3,7 @@ title: RabbitMQ
 icon: rabbit
 ---
 
-The Evolution API allows integration with **RabbitMQ** to manage events and message queues, facilitating efficient and scalable task communication and processing. Below, you will find information on how to configure RabbitMQ both globally and for individual instances.
+The Ebyte Cloud API allows integration with **RabbitMQ** to manage events and message queues, facilitating efficient and scalable task communication and processing. Below, you will find information on how to configure RabbitMQ both globally and for individual instances.
 
 ## Global RabbitMQ Configuration
 
@@ -63,7 +63,7 @@ While global configuration is recommended for centralizing event processing, it'
 
 ### Endpoint for Individual Configuration
 
-To configure RabbitMQ for a specific WhatsApp instance in the Evolution API, use the following endpoint:
+To configure RabbitMQ for a specific WhatsApp instance in the Ebyte Cloud API, use the following endpoint:
 
 ~~~ http
 POST [baseUrl]/rabbitmq/set/[instance_name]
@@ -110,7 +110,7 @@ When configuring RabbitMQ integration for individual instances, adjust the event
 
 ## Final Considerations
 
-RabbitMQ configuration in the Evolution API offers flexibility to manage events centrally with global configuration or segmented by instance, depending on your system's needs. Use the global configuration to simplify event management in complex environments, or configure it individually for more granular control.
+RabbitMQ configuration in the Ebyte Cloud API offers flexibility to manage events centrally with global configuration or segmented by instance, depending on your system's needs. Use the global configuration to simplify event management in complex environments, or configure it individually for more granular control.
 
 <Info>  
 For more details on RabbitMQ environment variables and other advanced configurations, consult the [environment variables section](/v2/pt/env#rabbitmq).

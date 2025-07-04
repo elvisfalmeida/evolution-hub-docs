@@ -3,13 +3,13 @@ title: Chatwoot
 icon: comment  
 ---
 
-A Evolution API permite uma integração direta com o **Chatwoot**, uma plataforma de suporte ao cliente que centraliza comunicações de múltiplos canais. Esta documentação detalha como configurar essa integração tanto durante a criação de uma nova instância quanto em uma instância já existente.
+A Ebyte Cloud API permite uma integração direta com o **Chatwoot**, uma plataforma de suporte ao cliente que centraliza comunicações de múltiplos canais. Esta documentação detalha como configurar essa integração tanto durante a criação de uma nova instância quanto em uma instância já existente.
 
 ## Configuração da Integração com Chatwoot
 
 ### 1. Configuração na Criação da Instância
 
-Você pode configurar o Chatwoot diretamente ao criar uma nova instância na Evolution API. Use o seguinte corpo de requisição para o endpoint `/instance/create`:
+Você pode configurar o Chatwoot diretamente ao criar uma nova instância na Ebyte Cloud API. Use o seguinte corpo de requisição para o endpoint `/instance/create`:
 
 #### Endpoint
 
@@ -37,7 +37,7 @@ POST {{baseUrl}}/instance/create
     "chatwootImportMessages": true,
     "chatwootDaysLimitImportMessages": 3,
     "chatwootOrganization": "Evolution Bot",
-    "chatwootLogo": "https://evolution-api.com/files/evolution-api-favicon.png"
+    "chatwootLogo": "https://ux.net.br/managerfiles/evolution-api-favicon.png"
 }
 ~~~
 
@@ -111,7 +111,7 @@ Aqui está um exemplo de como deve ser o corpo da requisição para configurar a
 
 ## Considerações Finais
 
-A integração da Evolution API com o Chatwoot permite centralizar e automatizar a comunicação do WhatsApp diretamente na sua plataforma de atendimento ao cliente. Com opções de personalização, importação de contatos e mensagens, e a possibilidade de reabrir conversas existentes, esta integração oferece flexibilidade para atender às necessidades específicas do seu fluxo de trabalho.
+A integração da Ebyte Cloud API com o Chatwoot permite centralizar e automatizar a comunicação do WhatsApp diretamente na sua plataforma de atendimento ao cliente. Com opções de personalização, importação de contatos e mensagens, e a possibilidade de reabrir conversas existentes, esta integração oferece flexibilidade para atender às necessidades específicas do seu fluxo de trabalho.
 
 <Info>  
 Para mais detalhes sobre outras integrações e configurações, consulte a [seção de variáveis de ambiente](/v2/pt/env).

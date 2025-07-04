@@ -3,7 +3,7 @@ title: Amazon SQS
 icon: aws
 ---
 
-The Evolution API allows integration with **Amazon SQS (Simple Queue Service)** to manage events and message queues in a scalable and reliable way. Similar to RabbitMQ, SQS in the Evolution API can be configured globally or for individual instances.
+The Ebyte Cloud API allows integration with **Amazon SQS (Simple Queue Service)** to manage events and message queues in a scalable and reliable way. Similar to RabbitMQ, SQS in the Ebyte Cloud API can be configured globally or for individual instances.
 
 ## Global SQS Configuration
 
@@ -37,7 +37,7 @@ Although global configuration is recommended for centralized event processing, y
 
 ### Endpoint for Individual Configuration
 
-To configure SQS for a specific WhatsApp instance in the Evolution API, use the following endpoint:
+To configure SQS for a specific WhatsApp instance in the Ebyte Cloud API, use the following endpoint:
 
 ~~~ http
 POST [baseUrl]/sqs/set/[instance_name]
@@ -86,7 +86,7 @@ Remove unused events to optimize SQS resource usage.
 
 ## Final Considerations
 
-Integration with Amazon SQS in the Evolution API offers a powerful solution for managing events in a scalable and reliable way, both centrally and segmented by instance. Use the global configuration to simplify processing in complex environments, or configure individually for more granular control.
+Integration with Amazon SQS in the Ebyte Cloud API offers a powerful solution for managing events in a scalable and reliable way, both centrally and segmented by instance. Use the global configuration to simplify processing in complex environments, or configure individually for more granular control.
 
 <Info>  
 For more details on environment variables and other advanced configurations, refer to the [environment variables section](/v2/pt/env#sqs).

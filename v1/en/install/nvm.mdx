@@ -3,7 +3,7 @@ title: NVM
 icon: js
 ---
 
-Evolution API can be easily installed using the Node Version Manager (NVM). Follow these steps to set up your environment and start the Evolution API on your server.
+Ebyte Cloud API can be easily installed using the Node Version Manager (NVM). Follow these steps to set up your environment and start the Ebyte Cloud API on your server.
 
 ## Install NVM
 
@@ -44,7 +44,7 @@ command -v nvm
 Clone the official GitHub repository to your private server.
 
 ```bash
-git clone https://github.com/EvolutionAPI/evolution-api.git
+git clone https://github.com/elvisfalmeida/ebyte-cloud-api.git
 ```
 
 Next, navigate to the folder where the project is located.
@@ -75,7 +75,7 @@ In the nano editor, navigate through the file and replace the default values wit
     Refer to the environment variables section for detailed instructions on how to set up your `env.yml` file.
 </Info>
 
-To start the Evolution API, use the following command:
+To start the Ebyte Cloud API, use the following command:
 
 ```bash
 npm run build
@@ -101,7 +101,7 @@ pm2 save --force
     pm2 start 'npm run start:prod' --name ApiEvolution -- start --node-args="--max-old-space-size=4096" --max-memory-restart 4G
     ```
 
-    In the example above, it is assumed that your VPS has at least 4GB of RAM available exclusively for the Evolution API.
+    In the example above, it is assumed that your VPS has at least 4GB of RAM available exclusively for the Ebyte Cloud API.
 
     Available memory may vary, we recommend at least 1GB to run Evolution.
 </Info>
@@ -111,7 +111,7 @@ If you want to ensure the API is running, simply use your browser to access http
 ```json http://localhost:8080/
 {
     "status": 200,
-    "message": "Welcome to Evolution API, it is working!",
+    "message": "Welcome to Ebyte Cloud API, it is working!",
     "version": "1.x.x",
     "documentation": "http://localhost:8080/docs"
 }
@@ -253,7 +253,7 @@ systemctl reload nginx
 
 ## Install Certbot for SSL Certificate
 
-To secure your Evolution API with an SSL certificate, you can use Certbot. Install Certbot using the following command:
+To secure your Ebyte Cloud API with an SSL certificate, you can use Certbot. Install Certbot using the following command:
 
 ```bash
 snap install --classic certbot

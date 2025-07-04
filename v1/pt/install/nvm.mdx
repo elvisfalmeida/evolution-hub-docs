@@ -3,7 +3,7 @@ title: NVM
 icon: js
 ---
 
-Evolution API pode ser facilmente instalado usando o Node Version Manager (NVM). Siga estas etapas para configurar seu ambiente e iniciar a Evolution API em seu servidor.
+Ebyte Cloud API pode ser facilmente instalado usando o Node Version Manager (NVM). Siga estas etapas para configurar seu ambiente e iniciar a Ebyte Cloud API em seu servidor.
 
 ## Instalar NVM
 
@@ -44,7 +44,7 @@ command -v nvm
 Clone o repositório oficial do Github para seu servidor privado.
 
 ```bash
-git clone https://github.com/EvolutionAPI/evolution-api.git
+git clone https://github.com/elvisfalmeida/ebyte-cloud-api.git
 ```
 
 Em seguida, acesse a pasta onde o projeto está
@@ -75,7 +75,7 @@ No editor nano, navegue pelo arquivo e substitua os valores padrão pelas suas c
     Acesse a seção de variáveis de ambiente para instruções detalhadas sobre como configurar seu arquivo `env.yml`.
 </Info>
 
-Para iniciar a Evolution API, use o seguinte comando:
+Para iniciar a Ebyte Cloud API, use o seguinte comando:
 
 ```bash
 npm run build
@@ -101,7 +101,7 @@ pm2 save --force
     pm2 start 'npm run start:prod' --name ApiEvolution -- start --node-args="--max-old-space-size=4096" --max-memory-restart 4G
     ```
 
-    No exemplo acima, é assumido que seu VPS tem pelo menos 4GB de RAM disponível exclusivamente para a Evolution API.
+    No exemplo acima, é assumido que seu VPS tem pelo menos 4GB de RAM disponível exclusivamente para a Ebyte Cloud API.
 
     A memória disponível pode variar, recomendamos pelo menos 1GB para executar a Evolution.
 </Info>
@@ -111,7 +111,7 @@ Se você quiser ter certeza de que a API está em execução, basta usar seu nav
 ```json http://localhost:8080/
 {
     "status": 200,
-    "message": "Bem-vindo à Evolution API, ela está funcionando!",
+    "message": "Bem-vindo à Ebyte Cloud API, ela está funcionando!",
     "version": "1.x.x",
     "documentation": "http://localhost:8080/docs"
 }
@@ -254,7 +254,7 @@ systemctl reload nginx
 
 ## Instalar o Certbot para o Certificado SSL
 
-Para proteger sua Evolution API com um certificado SSL, você pode usar o Certbot. Instale o Certbot usando o seguinte comando:
+Para proteger sua Ebyte Cloud API com um certificado SSL, você pode usar o Certbot. Instale o Certbot usando o seguinte comando:
 
 ```bash
 snap install --classic certbot

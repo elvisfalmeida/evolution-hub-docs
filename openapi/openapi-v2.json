@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.3",
   "info": {
-    "title": "Evolution API",
+    "title": "Ebyte Cloud API",
     "version": "2.1.1"
   },
   "servers": [
@@ -311,7 +311,7 @@
                   },
                   "chatwootLogo": {
                     "type": "string",
-                    "description": "https://evolution-api.com/files/evolution-api-favicon.png"
+                    "description": "https://ux.net.br/managerfiles/evolution-api-favicon.png"
                   }
                 }
               }
@@ -11944,7 +11944,7 @@
                   },
                   "example": {
                     "status": 200,
-                    "message": "Welcome to the Evolution API, it is working!",
+                    "message": "Welcome to the Ebyte Cloud API, it is working!",
                     "version": "1.7.4",
                     "swagger": "http://example.evolution-api.com/docs",
                     "manager": "http://example.evolution-api.com/manager",

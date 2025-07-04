@@ -5,14 +5,14 @@ icon: js
 
 ## Prerequisites
 
-Before starting the installation of Evolution API v2, ensure that you have already configured the necessary services, such as PostgreSQL and Redis. Follow the links below for more details:
+Before starting the installation of Ebyte Cloud API v2, ensure that you have already configured the necessary services, such as PostgreSQL and Redis. Follow the links below for more details:
 
 - [Database Configuration](/v2/pt/requirements/database)
 - [Redis Configuration](/v2/pt/requirements/redis)
 
 ## NVM Installation
 
-Evolution API can be easily installed using Node Version Manager (NVM). Follow these steps to set up your environment and start the Evolution API on your server.
+Ebyte Cloud API can be easily installed using Node Version Manager (NVM). Follow these steps to set up your environment and start the Ebyte Cloud API on your server.
 
 ### Install NVM
 
@@ -48,10 +48,10 @@ dpkg-reconfigure tzdata
 
 ## Cloning the Repository and Installing Dependencies
 
-Clone the official Evolution API v2 repository from the correct branch:
+Clone the official Ebyte Cloud API v2 repository from the correct branch:
 
 ```bash
-git clone -b v2.0.0 https://github.com/EvolutionAPI/evolution-api.git
+git clone -b v2.0.0 https://github.com/elvisfalmeida/ebyte-cloud-api.git
 ```
 
 Navigate to the project directory and install the dependencies:
@@ -97,9 +97,9 @@ After setting up the environment, you will need to generate the Prisma client fi
     npm run db:deploy
     ```
     
-## Starting the Evolution API
+## Starting the Ebyte Cloud API
 
-After configuration, you can start the Evolution API with the following command:
+After configuration, you can start the Ebyte Cloud API with the following command:
 
 ```bash
 npm run build
@@ -124,7 +124,7 @@ If your server has more memory, consider configuring PM2 to utilize more resourc
 pm2 start 'npm run start:prod' --name ApiEvolution -- start --node-args="--max-old-space-size=4096" --max-memory-restart 4G
 ```
 
-This is recommended for servers with at least 4GB of RAM exclusively available for the Evolution API.
+This is recommended for servers with at least 4GB of RAM exclusively available for the Ebyte Cloud API.
 </Info>
 
 To verify that the API is running, visit [http://localhost:8080](http://localhost:8080). You should see the following response:
@@ -132,7 +132,7 @@ To verify that the API is running, visit [http://localhost:8080](http://localhos
 ```json
 {
   "status": 200,
-  "message": "Welcome to the Evolution API, it is working!",
+  "message": "Welcome to the Ebyte Cloud API, it is working!",
   "version": "2.0.10",
   "clientName": "evolution01",
   "manager": "https://evo2.site.com/manager",

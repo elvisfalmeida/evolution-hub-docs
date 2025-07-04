@@ -3,13 +3,13 @@ title: Websocket
 icon: plug
 ---
 
-Evolution API utilizes socket.io to emit events, leveraging WebSocket technology. This makes the development of integrations more efficient and straightforward for developers. WebSocket provides a full-duplex communication channel over a single, long-lived connection, enabling real-time data flow between the client and server.
+Ebyte Cloud API utilizes socket.io to emit events, leveraging WebSocket technology. This makes the development of integrations more efficient and straightforward for developers. WebSocket provides a full-duplex communication channel over a single, long-lived connection, enabling real-time data flow between the client and server.
 
 <Info>In order to activate websockets, you must define the environment variable `WEBSOCKET_ENABLED` as `true`. Learn more on [Enviroment Variables](/en/env)</Info>
 
 ## Connecting to WebSocket
 
-To connect to the WebSocket server in the Evolution API, you can use the following URL format:
+To connect to the WebSocket server in the Ebyte Cloud API, you can use the following URL format:
 ~~~
 wss://api.yoursite.com/instance_name
 ~~~
@@ -24,7 +24,7 @@ const socket = io('wss://api.yoursite.com/instance_name', {
 });
 
 socket.on('connect', () => {
-  console.log('Connected to Evolution API WebSocket');
+  console.log('Connected to Ebyte Cloud API WebSocket');
 });
 
 // Listening to events
@@ -34,7 +34,7 @@ socket.on('event_name', (data) => {
 
 // Handling disconnection
 socket.on('disconnect', () => {
-  console.log('Disconnected from Evolution API WebSocket');
+  console.log('Disconnected from Ebyte Cloud API WebSocket');
 });
 ~~~
 
@@ -66,4 +66,4 @@ socket.disconnect();
 
 Remember to handle the connection responsibly, disconnecting when your application or component unmounts to prevent memory leaks and ensure efficient resource usage.
 
-By leveraging WebSockets, Evolution API offers a powerful way to interact with the system in real time, providing a seamless experience for both developers and end-users.
+By leveraging WebSockets, Ebyte Cloud API offers a powerful way to interact with the system in real time, providing a seamless experience for both developers and end-users.

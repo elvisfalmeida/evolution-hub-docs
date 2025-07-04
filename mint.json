@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Evolution API Documentation",
+  "name": "Ebyte Cloud API Documentation",
   "versions": ["v1", "v2"],
   "openapi": ["/openapi/openapi-v1.json", "/openapi/openapi-fixed.json"],
   "feedback": {
@@ -25,7 +25,7 @@
   },
   "topbarCtaButton": {
     "name": "GitHub",
-    "url": "https://github.com/EvolutionAPI/evolution-api"
+    "url": "https://github.com/elvisfalmeida/ebyte-cloud-api"
   },
   "primaryTab": {
     "name": "Português",
@@ -663,7 +663,7 @@
     }
   ],
   "footerSocials": {
-    "website": "https://evolution-api.com",
-    "github": "https://github.com/EvolutionAPI/evolution-api"
+    "website": "https://ux.net.br/manager",
+    "github": "https://github.com/elvisfalmeida/ebyte-cloud-api"
   }
 }

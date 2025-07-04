@@ -3,21 +3,21 @@ title: Atualização
 icon: code-pull-request
 ---
 
-Manter sua instância da Evolution API atualizada é crucial para segurança, desempenho e acesso a novos recursos. O método de atualização depende de como você inicialmente instalou a API. Este guia cobre os passos para atualizar sua Evolution API usando Docker Compose e NPM.
+Manter sua instância da Ebyte Cloud API atualizada é crucial para segurança, desempenho e acesso a novos recursos. O método de atualização depende de como você inicialmente instalou a API. Este guia cobre os passos para atualizar sua Ebyte Cloud API usando Docker Compose e NPM.
 
 <Note>Antes de atualizar a Evolution, certifique-se de que todos os aplicativos integrados estão realmente funcionando com a Evolution. Atualize por sua conta e risco.</Note>
 
 ## Atualização com Docker
 
-Se você configurou inicialmente sua Evolution API usando Docker, siga estas etapas para atualizar:
+Se você configurou inicialmente sua Ebyte Cloud API usando Docker, siga estas etapas para atualizar:
 
 ### Atualização com Docker CLI
 
-Se sua Evolution API foi instalada inicialmente usando Docker Compose via interface de linha de comando (CLI), e não através do Portainer ou qualquer outra ferramenta de gerenciamento de contêiner, siga estas etapas para atualizá-la:
+Se sua Ebyte Cloud API foi instalada inicialmente usando Docker Compose via interface de linha de comando (CLI), e não através do Portainer ou qualquer outra ferramenta de gerenciamento de contêiner, siga estas etapas para atualizá-la:
 
 1. **Navegue até o Diretório do Docker Compose**: Abra um terminal e vá para o diretório onde seu arquivo Docker Compose (`docker-compose.yml`) está localizado.
 
-2. **Puxe a Imagem Mais Recente**: Atualize a imagem da Evolution API para a versão mais recente executando o seguinte comando:
+2. **Puxe a Imagem Mais Recente**: Atualize a imagem da Ebyte Cloud API para a versão mais recente executando o seguinte comando:
 
 ~~~ shell
 docker compose pull atendai/evolution-api:latest
@@ -31,11 +31,11 @@ docker compose down && docker compose up -d
 
 ## Atualização com Portainer
 
-Se você está usando o Portainer para gerenciamento de contêineres, siga estas etapas para atualizar sua Evolution API:
+Se você está usando o Portainer para gerenciamento de contêineres, siga estas etapas para atualizar sua Ebyte Cloud API:
 
 1. **Acesse o Painel do Portainer**: Abra o painel do Portainer em um navegador web.
 
-2. **Navegue até Seus Contêineres**: Vá para a seção 'Stacks' onde seu contêiner da Evolution API está listado.
+2. **Navegue até Seus Contêineres**: Vá para a seção 'Stacks' onde seu contêiner da Ebyte Cloud API está listado.
 
 3. **Atualize o Compose**:
     - Localize o campo `image` na sua configuração do Docker Compose.
@@ -43,7 +43,7 @@ Se você está usando o Portainer para gerenciamento de contêineres, siga estas
 ~~~ yaml stack-file.yml
 # ... (outros serviços e configurações)
   evolution_api:
-    # Atualize a versão da imagem da Evolution API aqui
+    # Atualize a versão da imagem da Ebyte Cloud API aqui
     # Use 'atendai/evolution-api:latest' para a versão mais recente
     # Ou especifique uma versão específica como 'atendai/evolutionapi:v1.6.0'
     image: atendai/evolution-api:v1.x.x
@@ -56,26 +56,26 @@ Se você está usando o Portainer para gerenciamento de contêineres, siga estas
     - Atualize o valor para `atendai/evolution-api:latest` para a versão mais recente, ou use `atendai/evolutionapi:v1.x.x` para uma versão específica.
     - Após fazer as alterações, clique no botão 'Deploy' no final da janela de edição do compose.
 
-4. **Verifique a Atualização**: Após recriar o contêiner, verifique se a Evolution API está executando a versão mais recente. Isso pode ser verificado tipicamente através do endpoint de versão da API ou dos logs.
+4. **Verifique a Atualização**: Após recriar o contêiner, verifique se a Ebyte Cloud API está executando a versão mais recente. Isso pode ser verificado tipicamente através do endpoint de versão da API ou dos logs.
 
 <Note>
-    Para ambientes de produção, é recomendável especificar uma versão particular da Evolution API (ex.: atendai/evolution-api:v1.x.x) em vez de usar latest.
+    Para ambientes de produção, é recomendável especificar uma versão particular da Ebyte Cloud API (ex.: atendai/evolution-api:v1.x.x) em vez de usar latest.
     Esta prática garante estabilidade e previsibilidade, pois protege seu ambiente de produção de problemas potenciais decorrentes de mudanças inesperadas na versão mais recente.
 </Note>
 
-Seguindo esses passos, você pode garantir que sua Evolution API esteja sempre atualizada usando o Portainer.
+Seguindo esses passos, você pode garantir que sua Ebyte Cloud API esteja sempre atualizada usando o Portainer.
 
 ## Atualização com NPM
 
-Atualizar sua instalação da Evolution API via NPM envolve várias etapas para garantir uma transição suave para a nova versão. Aqui está um guia passo a passo:
+Atualizar sua instalação da Ebyte Cloud API via NPM envolve várias etapas para garantir uma transição suave para a nova versão. Aqui está um guia passo a passo:
 
-1. **Limpar e Parar**: Limpe todos os logs do PM2, útil para resolução de problemas após a atualização, e pare temporariamente a Evolution API para aplicar as atualizações com segurança.
+1. **Limpar e Parar**: Limpe todos os logs do PM2, útil para resolução de problemas após a atualização, e pare temporariamente a Ebyte Cloud API para aplicar as atualizações com segurança.
 
 ~~~ shell Terminal
 # Limpar todos os logs do PM2
 pm2 flush
 
-# Parar o processo atual da Evolution API
+# Parar o processo atual da Ebyte Cloud API
 pm2 stop ApiEvolution
 ~~~
 
@@ -102,9 +102,9 @@ rm -rf node_modules
 # Instalar dependências com NPM
 npm i
 
-# Reiniciar a Evolution API com a versão atualizada
+# Reiniciar a Ebyte Cloud API com a versão atualizada
 pm2 start ApiEvolution
 
-# Opcionalmente, visualizar os logs do PM2 para a Evolution API
+# Opcionalmente, visualizar os logs do PM2 para a Ebyte Cloud API
 pm2 log ApiEvolution
 ~~~

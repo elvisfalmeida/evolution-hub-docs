@@ -3,7 +3,7 @@ title: RabbitMQ
 icon: rabbit
 ---
 
-A Evolution API permite a integração com o **RabbitMQ** para gerenciar eventos e filas de mensagens, facilitando a comunicação e processamento de tarefas de forma eficiente e escalável. A seguir, você encontrará informações sobre como configurar o RabbitMQ tanto em modo global quanto em instâncias individuais.
+A Ebyte Cloud API permite a integração com o **RabbitMQ** para gerenciar eventos e filas de mensagens, facilitando a comunicação e processamento de tarefas de forma eficiente e escalável. A seguir, você encontrará informações sobre como configurar o RabbitMQ tanto em modo global quanto em instâncias individuais.
 
 ## Configuração Global do RabbitMQ
 
@@ -63,7 +63,7 @@ Embora a configuração global seja recomendada para centralizar o processamento
 
 ### Endpoint para Configuração Individual
 
-Para configurar o RabbitMQ para uma instância específica do WhatsApp na Evolution API, utilize o seguinte endpoint:
+Para configurar o RabbitMQ para uma instância específica do WhatsApp na Ebyte Cloud API, utilize o seguinte endpoint:
 
 ~~~ http
 POST [baseUrl]/rabbitmq/set/[instance_name]
@@ -110,7 +110,7 @@ Ao configurar a integração com o RabbitMQ para instâncias individuais, ajuste
 
 ## Considerações Finais
 
-A configuração do RabbitMQ na Evolution API oferece flexibilidade para gerenciar eventos de forma centralizada com a configuração global, ou de forma segmentada por instância, dependendo das necessidades do seu sistema. Utilize a configuração global para simplificar a gestão de eventos em ambientes complexos, ou configure individualmente para controle mais granular.
+A configuração do RabbitMQ na Ebyte Cloud API oferece flexibilidade para gerenciar eventos de forma centralizada com a configuração global, ou de forma segmentada por instância, dependendo das necessidades do seu sistema. Utilize a configuração global para simplificar a gestão de eventos em ambientes complexos, ou configure individualmente para controle mais granular.
 
 <Info>  
 Para mais detalhes sobre as variáveis de ambiente do RabbitMQ e outras configurações avançadas, consulte a [seção de variáveis de ambiente](/v2/pt/env#rabbitmq).

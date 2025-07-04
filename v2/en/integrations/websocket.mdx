@@ -3,7 +3,7 @@ Title: WebSocket
 Icon: plug
 ---
 
-The Evolution API uses `socket.io` to emit real-time events, leveraging WebSocket technology. This makes integration development more efficient and straightforward for developers. WebSocket provides a full-duplex communication channel over a single, long-lasting connection, enabling real-time data flow between the client and the server.
+The Ebyte Cloud API uses `socket.io` to emit real-time events, leveraging WebSocket technology. This makes integration development more efficient and straightforward for developers. WebSocket provides a full-duplex communication channel over a single, long-lasting connection, enabling real-time data flow between the client and the server.
 
 <Info>  
 To enable WebSockets, set the `WEBSOCKET_ENABLED` environment variable to `true`. See more details in [Environment Variables](/v2/en/env).
@@ -13,7 +13,7 @@ To enable WebSockets, set the `WEBSOCKET_ENABLED` environment variable to `true`
 
 ### Global Mode
 
-In **global mode**, the `WEBSOCKET_GLOBAL_EVENTS` environment variable must be set to `true`. In this mode, the WebSocket is initialized when the service starts and sends events from all instances, regardless of channels. This means that any client connected to the WebSocket will receive global events, covering all Evolution API instances configured in the system.
+In **global mode**, the `WEBSOCKET_GLOBAL_EVENTS` environment variable must be set to `true`. In this mode, the WebSocket is initialized when the service starts and sends events from all instances, regardless of channels. This means that any client connected to the WebSocket will receive global events, covering all Ebyte Cloud API instances configured in the system.
 
 - **Activation**: Configure in the `.env` file:
 
@@ -73,7 +73,7 @@ const socket = io('wss://api.yoursite.com/instance_name', {
 });
 
 socket.on('connect', () => {
-  console.log('Connected to the Evolution API WebSocket');
+  console.log('Connected to the Ebyte Cloud API WebSocket');
 });
 
 // Listening to events
@@ -83,7 +83,7 @@ socket.on('event_name', (data) => {
 
 // Handling disconnection
 socket.on('disconnect', () => {
-  console.log('Disconnected from the Evolution API WebSocket');
+  console.log('Disconnected from the Ebyte Cloud API WebSocket');
 });
 ~~~
 
@@ -105,4 +105,4 @@ Remember to handle the connection responsibly by disconnecting when your applica
 
 ## Final Considerations
 
-The Evolution API provides a powerful way to interact in real-time through WebSockets, offering a seamless experience for both developers and end users. Whether in global mode, monitoring all instances simultaneously, or in traditional mode, focused on a single instance, the system's flexibility allows for adaptation to the specific needs of your project.
+The Ebyte Cloud API provides a powerful way to interact in real-time through WebSockets, offering a seamless experience for both developers and end users. Whether in global mode, monitoring all instances simultaneously, or in traditional mode, focused on a single instance, the system's flexibility allows for adaptation to the specific needs of your project.

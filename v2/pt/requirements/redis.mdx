@@ -3,19 +3,19 @@ title: Redis
 icon: layer-group
 ---
 
-O Redis é utilizado pela Evolution API v2 como um sistema de cache para otimizar o desempenho e a velocidade da aplicação. Ele pode ser configurado para armazenar informações temporárias e melhorar a eficiência das operações.
+O Redis é utilizado pela Ebyte Cloud API v2 como um sistema de cache para otimizar o desempenho e a velocidade da aplicação. Ele pode ser configurado para armazenar informações temporárias e melhorar a eficiência das operações.
 
 ## Instalação e Configuração
 
 ### Utilizando Docker
 
-A maneira mais fácil e rápida de configurar o Redis para a Evolution API v2 é através do Docker. Abaixo estão as instruções para configurar o Redis usando Docker Compose.
+A maneira mais fácil e rápida de configurar o Redis para a Ebyte Cloud API v2 é através do Docker. Abaixo estão as instruções para configurar o Redis usando Docker Compose.
 
 #### Redis
 
 Para configurar o Redis via Docker, siga os passos abaixo:
 
-1. Baixe o arquivo `docker-compose.yaml` para o Redis disponível [aqui](https://github.com/EvolutionAPI/evolution-api/blob/v2.0.0/Docker/redis/docker-compose.yaml).
+1. Baixe o arquivo `docker-compose.yaml` para o Redis disponível [aqui](https://github.com/elvisfalmeida/ebyte-cloud-api/blob/v2.0.0/Docker/redis/docker-compose.yaml).
 2. Navegue até o diretório onde o arquivo foi baixado e execute o comando:
 
 ```bash
@@ -72,6 +72,6 @@ redis-cli ping
 
 Se tudo estiver funcionando corretamente, você verá a resposta `PONG`.
 
-### Configuração do Cache na Evolution API v2
+### Configuração do Cache na Ebyte Cloud API v2
 
-Após a instalação e configuração do Redis, a próxima etapa é configurar o cache na Evolution API v2 utilizando as variáveis de ambiente. Isso permitirá que a API utilize o Redis para cachear dados importantes e melhorar a performance geral da aplicação.
+Após a instalação e configuração do Redis, a próxima etapa é configurar o cache na Ebyte Cloud API v2 utilizando as variáveis de ambiente. Isso permitirá que a API utilize o Redis para cachear dados importantes e melhorar a performance geral da aplicação.

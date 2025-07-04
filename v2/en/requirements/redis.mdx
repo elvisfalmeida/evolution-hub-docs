@@ -3,19 +3,19 @@ title: Redis
 icon: layer-group
 ---
 
-Redis is used by Evolution API v2 as a caching system to optimize the application's performance and speed. It can be configured to store temporary information and improve operational efficiency.
+Redis is used by Ebyte Cloud API v2 as a caching system to optimize the application's performance and speed. It can be configured to store temporary information and improve operational efficiency.
 
 ## Installation and Configuration
 
 ### Using Docker
 
-The easiest and fastest way to set up Redis for Evolution API v2 is through Docker. Below are the instructions to configure Redis using Docker Compose.
+The easiest and fastest way to set up Redis for Ebyte Cloud API v2 is through Docker. Below are the instructions to configure Redis using Docker Compose.
 
 #### Redis
 
 To set up Redis via Docker, follow these steps:
 
-1. Download the `docker-compose.yaml` file for Redis available [here](https://github.com/EvolutionAPI/evolution-api/blob/v2.0.0/Docker/redis/docker-compose.yaml).
+1. Download the `docker-compose.yaml` file for Redis available [here](https://github.com/elvisfalmeida/ebyte-cloud-api/blob/v2.0.0/Docker/redis/docker-compose.yaml).
 2. Navigate to the directory where the file was downloaded and run the command:
 
 ```bash
@@ -72,6 +72,6 @@ redis-cli ping
 
 If everything is working correctly, you will see the response `PONG`.
 
-### Cache Configuration in Evolution API v2
+### Cache Configuration in Ebyte Cloud API v2
 
-After installing and configuring Redis, the next step is to configure caching in Evolution API v2 using environment variables. This will enable the API to use Redis to cache important data and improve the overall performance of the application.
+After installing and configuring Redis, the next step is to configure caching in Ebyte Cloud API v2 using environment variables. This will enable the API to use Redis to cache important data and improve the overall performance of the application.

@@ -3,11 +3,11 @@ title: S3/Minio
 icon: cloud  
 ---
 
-A Evolution API suporta a integração com Amazon S3 ou Minio para armazenar arquivos de mídia do WhatsApp, como imagens, áudios e documentos. Essa integração permite que os arquivos sejam armazenados de forma segura e acessível, com links gerados automaticamente e incluídos nos webhooks enviados pela API.
+A Ebyte Cloud API suporta a integração com Amazon S3 ou Minio para armazenar arquivos de mídia do WhatsApp, como imagens, áudios e documentos. Essa integração permite que os arquivos sejam armazenados de forma segura e acessível, com links gerados automaticamente e incluídos nos webhooks enviados pela API.
 
 ## Configuração de Variáveis de Ambiente
 
-Para habilitar o armazenamento S3 ou Minio, você deve definir as variáveis de ambiente adequadas no arquivo `.env` da Evolution API. Abaixo estão as variáveis necessárias e suas funções:
+Para habilitar o armazenamento S3 ou Minio, você deve definir as variáveis de ambiente adequadas no arquivo `.env` da Ebyte Cloud API. Abaixo estão as variáveis necessárias e suas funções:
 
 ### Variáveis de Configuração para S3
 
@@ -66,11 +66,11 @@ S3_USE_SSL=true
 
 ## Como Funciona o Armazenamento de Mídia
 
-Quando o armazenamento S3 ou Minio é configurado corretamente, todos os arquivos de mídia recebidos do WhatsApp (como imagens, vídeos, áudios, etc.) são automaticamente enviados para o bucket configurado. A URL pública do arquivo armazenado é então gerada e incluída no webhook da Evolution API.
+Quando o armazenamento S3 ou Minio é configurado corretamente, todos os arquivos de mídia recebidos do WhatsApp (como imagens, vídeos, áudios, etc.) são automaticamente enviados para o bucket configurado. A URL pública do arquivo armazenado é então gerada e incluída no webhook da Ebyte Cloud API.
 
 ### Webhook com `mediaUrl`
 
-Quando um arquivo de mídia é recebido e armazenado, o webhook enviado pela Evolution API incluirá o `mediaUrl` no corpo da mensagem. Isso permite que sua aplicação acesse diretamente o arquivo armazenado no S3 ou Minio.
+Quando um arquivo de mídia é recebido e armazenado, o webhook enviado pela Ebyte Cloud API incluirá o `mediaUrl` no corpo da mensagem. Isso permite que sua aplicação acesse diretamente o arquivo armazenado no S3 ou Minio.
 
 ### Exemplo de Webhook
 
@@ -91,7 +91,7 @@ Aqui está um exemplo de como o webhook com `mediaUrl` pode aparecer:
 
 ## Considerações Finais
 
-Integrar a Evolution API com Amazon S3 ou Minio para o armazenamento de arquivos de mídia oferece uma solução escalável e segura para gerenciar conteúdos de mídia do WhatsApp. Ao configurar as variáveis de ambiente corretamente, você garante que todos os arquivos de mídia sejam armazenados e acessíveis conforme necessário, proporcionando maior controle sobre os dados e a capacidade de integrá-los facilmente em suas aplicações.
+Integrar a Ebyte Cloud API com Amazon S3 ou Minio para o armazenamento de arquivos de mídia oferece uma solução escalável e segura para gerenciar conteúdos de mídia do WhatsApp. Ao configurar as variáveis de ambiente corretamente, você garante que todos os arquivos de mídia sejam armazenados e acessíveis conforme necessário, proporcionando maior controle sobre os dados e a capacidade de integrá-los facilmente em suas aplicações.
 
 <Info>  
 Para mais detalhes sobre as variáveis de ambiente e outras configurações avançadas, consulte a [seção de variáveis de ambiente](/v2/pt/env#s3).
